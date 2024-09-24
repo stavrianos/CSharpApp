@@ -1,0 +1,33 @@
+GET {{host}}/todos/
+Accept: application/json
+
+###
+
+GET {{host}}/todos/1
+Accept: application/json
+
+### 
+
+GET {{host}}/posts/
+Accept: application/json
+
+###
+
+GET {{host}}/posts/1
+Accept: application/json
+
+### 
+
+POST {{host}}/posts/
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "id": 1,
+  "title": "the title",
+  "body": "the body"
+}
+
+###
+
+DELETE {{host}}/posts/1
